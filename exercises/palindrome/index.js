@@ -16,7 +16,7 @@ function palindrome(str) {
     if(newString === str){
             return true; 
         } else {
-            return false; 
+            return false;
     }
 }
 
