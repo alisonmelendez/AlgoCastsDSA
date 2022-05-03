@@ -14,6 +14,7 @@ function chunk(array, size) {
     
     while(index < array.length){
         console.log(chunked.push(array.slice(index, index + size)))
+        //the slice method is slicing from index up to (not including) index + size
         index += size
         console.log(chunked)
     }
