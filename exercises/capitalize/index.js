@@ -7,6 +7,16 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-function capitalize(str) {}
+//slice, try to find letter after a space?, then use .toUpperCase() to capitalize the letter @ that position 
+
+function capitalize(str) {
+    let test = [] 
+    for (let word of str.split(' ')){
+        test.push(word[0].toUpperCase() + word.slice(1))
+    }
+        return test.join(' ');                
+}
+
+capitalize('a short sentence')
 
 module.exports = capitalize;
